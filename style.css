@@ -1,0 +1,72 @@
+#themeToggle {
+  background: #10b981;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  color: white;
+  font-size: 1rem;
+}
+
+.resume-btn {
+  color: white;
+  background-color: #3b82f6;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #10b981;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Scroll reveal helpers */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark mode support */
+body.dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+body.dark .navbar {
+  background-color: #111827;
+}
+body.dark .header {
+  background-color: #0f172a;
+}
+body.dark .btn, body.dark input, body.dark textarea {
+  background-color: #374151;
+  color: white;
+  border-color: #4b5563;
+}
+body.dark .resume-btn {
+  background-color: #2563eb;
+}
